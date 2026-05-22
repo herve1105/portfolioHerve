@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Hervé Mazumbu</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="light">
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">Mazumbu</a>
+
+      <div class="nav-buttons">
+        <button class="nav-settings" id="switcher-toggle" aria-label="Ouvrir les paramètres">
+            <i class="fa-solid fa-gear"></i>
+        </button>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu">
+        <span></span>
+        </button>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+        <button class="nav-close" id="nav-close" aria-label="Fermer le menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        </div>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active-link">Accueil</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#skills" class="nav-link">Compétences</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#resume" class="nav-link">CV</a></li>
+          <li><a href="#testimonials" class="nav-link">Témoignages</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" class="social-link" target="_blank"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://www.instagram.com" class="social-link" target="_blank"><i class="ri-instagram-line"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="style-switcher" id="style-switcher">
+    <button class="style-switcher-close" id="switcher-close" aria-label="Fermer les paramètres">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <h3 class="style-switcher-title">Style Switcher</h3>
+
+    <div class="style-switcher-item">
+      <h4 class="style-switcher-subtitle">Couleurs</h4>
+
+      <div class="style-switcher-colors">
+        <button class="style-switcher-color active-color" style="--hue:165" data-hue="165"><i class="fa-solid fa-check"></i></button>
+        <button class="style-switcher-color" style="--hue:260" data-hue="260"><i class="fa-solid fa-check"></i></button>
+        <button class="style-switcher-color" style="--hue:345" data-hue="345"><i class="fa-solid fa-check"></i></button>
+        <button class="style-switcher-color" style="--hue:60" data-hue="60"><i class="fa-solid fa-check"></i></button>
+        <button class="style-switcher-color" style="--hue:20" data-hue="20"><i class="fa-solid fa-check"></i></button>
+      </div>
+    </div>
+
+    <div class="style-switcher-item">
+      <h4 class="style-switcher-subtitle">Thème</h4>
+
+      <div class="style-switcher-themes">
+        <label class="style-switcher-theme">
+          <input type="radio" name="body-theme" value="light" class="style-switcher-input" checked>
+          <span>Light</span>
+        </label>
+
+        <label class="style-switcher-theme">
+          <input type="radio" name="body-theme" value="dark" class="style-switcher-input">
+          <span>Dark</span>
+        </label>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="home section" id="home">
+      <div class="home-container container">
+        <div class="decor-line decor-line-left"></div>
+
+        <div class="home-content">
+          <div class="home-text">
+            <p class="home-subtitle">Salut, <span>je suis</span></p>
+            <h1 class="home-title"><span>Hervé</span> Mazumbu</h1>
+            <h2 class="home-job">Développeur web et mobile</h2>
+
+            <p class="home-description">
+              Basé en République Démocratique du Congo, Je conçois des interfaces modernes et 
+              responsives pour transformer vos idées en expériences numériques concrètes.
+            </p>
+
+            <div class="social-links home-socials">
+              <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+              <a href="https://www.instagram.com" target="_blank"><i class="ri-instagram-line"></i></a>
+            </div>
+
+            <div class="home-btns">
+              <a href="cv.html" class="btn">Download CV</a>
+              <a href="#skills" class="home-link">Mes compétences</a>
+            </div>
+          </div>
+
+          <div class="home-banner">
+            <div class="home-img-wrapper">
+              <img src="assets/images/Image_profil.jpg" alt="Photo de Hervé Mazumbu" class="home-profile">
+            </div>
+
+            <div class="home-data home-data-one">
+              <span class="home-data-no">1+</span>
+              <p class="home-data-title">Année <span>d’apprentissage</span></p>
+            </div>
+
+            <div class="home-data home-data-two">
+              <span class="home-data-no">6+</span>
+              <p class="home-data-title">Projets <span>réalisés</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">Mes Services</p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <span class="card-small-title">Web Development</span>
+            <h3>Intégration Web</h3>
+            <p>Création de pages web modernes, propres, responsives et adaptées aux besoins du client.</p>
+            <a href="#contact" class="card-link">Demander un service <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="card">
+            <span class="card-small-title">Frontend</span>
+            <h3>HTML, CSS & JavaScript</h3>
+            <p>Développement d’interfaces dynamiques avec une structure claire et un code maintenable.</p>
+            <a href="#contact" class="card-link">Demander un service <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="card">
+            <span class="card-small-title">UI Responsive</span>
+            <h3>Design Responsive</h3>
+            <p>Adaptation des sites web aux écrans mobile, tablette et desktop avec une bonne expérience utilisateur.</p>
+            <a href="#contact" class="card-link">Demander un service <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Professional Skills</h2>
+        <p class="section-subtitle">Mes Talents</p>
+
+        <div class="skills-grid">
+          <article class="skill"><div><h3>HTML</h3><span>90%</span></div><p>Structure propre, accessible et sémantique.</p><div class="skill-line"><span style="width:90%"></span></div></article>
+          <article class="skill"><div><h3>CSS</h3><span>85%</span></div><p>Mise en page responsive et design moderne.</p><div class="skill-line"><span style="width:85%"></span></div></article>
+          <article class="skill"><div><h3>JavaScript</h3><span>75%</span></div><p>Interactions dynamiques et logique frontend.</p><div class="skill-line"><span style="width:75%"></span></div></article>
+          <article class="skill"><div><h3>Tailwind CSS</h3><span>70%</span></div><p>Création rapide d’interfaces propres.</p><div class="skill-line"><span style="width:70%"></span></div></article>
+          <article class="skill"><div><h3>Git & GitHub</h3><span>80%</span></div><p>Versionning, branches et collaboration.</p><div class="skill-line"><span style="width:80%"></span></div></article>
+          <article class="skill"><div><h3>PostgreSQL</h3><span>65%</span></div><p>Base de données relationnelle et requêtes SQL.</p><div class="skill-line"><span style="width:65%"></span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-subtitle">Mes Réalisations</p>
+
+        <div class="portfolio-filters">
+          <button class="portfolio-filter-btn active-filter" data-filter="all">All</button>
+          <button class="portfolio-filter-btn" data-filter="frontend">Frontend</button>
+          <button class="portfolio-filter-btn" data-filter="database">Database</button>
+          <button class="portfolio-filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card portfolio-card" data-category="frontend">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Projet X Clone">
+            <span class="card-small-title">Frontend</span>
+            <h3>X Clone</h3>
+            <p>Interface inspirée de X avec timeline, profil, tweets, likes et responsive design.</p>
+            <a href="projets.html" class="card-link">Voir projet <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="card portfolio-card" data-category="database">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Projet base de données">
+            <span class="card-small-title">Database</span>
+            <h3>NovaBoutique</h3>
+            <p>Modélisation MCD, MLD, MPD et script SQL pour un système e-commerce.</p>
+            <a href="projets.html" class="card-link">Voir projet <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="card portfolio-card" data-category="design">
+            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=800&auto=format&fit=crop" alt="Projet design">
+            <span class="card-small-title">Design</span>
+            <h3>Portfolio UI</h3>
+            <p>Création d’une interface portfolio moderne avec sections professionnelles.</p>
+            <a href="projets.html" class="card-link">Voir projet <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume section" id="resume">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <p class="section-subtitle">Mon Parcours</p>
+
+        <div class="resume-grid">
+          <div>
+            <h3 class="resume-title">Education</h3>
+
+            <article class="resume-item is-open">
+              <button class="resume-toggle">Licence en Informatique <i class="fa-solid fa-plus"></i></button>
+              <div class="resume-content">
+                <h4>Formation universitaire</h4>
+                <p>Base solide en informatique, bases de données, algorithmique et systèmes d’information.</p>
+              </div>
+            </article>
+
+            <article class="resume-item">
+              <button class="resume-toggle">Développement Web <i class="fa-solid fa-plus"></i></button>
+              <div class="resume-content">
+                <h4>Formation professionnelle</h4>
+                <p>HTML, CSS, JavaScript, Git, GitHub, responsive design et bonnes pratiques frontend.</p>
+              </div>
+            </article>
+          </div>
+
+          <div>
+            <h3 class="resume-title">Experience</h3>
+
+            <article class="resume-item">
+              <button class="resume-toggle">Frontend Developer Junior <i class="fa-solid fa-plus"></i></button>
+              <div class="resume-content">
+                <h4>Projets personnels</h4>
+                <p>Réalisation de maquettes, intégration web, portfolio, clone X et interfaces responsives.</p>
+              </div>
+            </article>
+
+            <article class="resume-item">
+              <button class="resume-toggle">Base de données <i class="fa-solid fa-plus"></i></button>
+              <div class="resume-content">
+                <h4>PostgreSQL</h4>
+                <p>Création de tables, relations, contraintes, requêtes SQL et export de schéma.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+        <p class="section-subtitle">Ce qu’on dit de moi</p>
+
+        <div class="cards-grid">
+          <article class="card testimonial-card">
+            <i class="fa-solid fa-quote-right quote-icon"></i>
+            <p>Hervé travaille avec sérieux, écoute les consignes et cherche toujours à améliorer la qualité du rendu.</p>
+            <h3>Client Local</h3>
+            <span>Projet Web</span>
+          </article>
+
+          <article class="card testimonial-card">
+            <i class="fa-solid fa-quote-right quote-icon"></i>
+            <p>Très bonne progression en développement web, avec une vraie volonté de produire un travail professionnel.</p>
+            <h3>Encadreur</h3>
+            <span>Formation Web</span>
+          </article>
+
+          <article class="card testimonial-card">
+            <i class="fa-solid fa-quote-right quote-icon"></i>
+            <p>Disponible, motivé et capable de transformer une idée en interface claire et responsive.</p>
+            <h3>Collaborateur</h3>
+            <span>Projet Frontend</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Parlons de vos idées</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <article class="contact-item"><i class="fa-solid fa-location-dot"></i><div><h3>Adresse</h3><p>Kinshasa, RDC</p></div></article>
+            <article class="contact-item"><i class="fa-solid fa-briefcase"></i><div><h3>Freelance</h3><p>Disponible actuellement</p></div></article>
+            <article class="contact-item"><i class="fa-solid fa-envelope"></i><div><h3>Email</h3><p>mazumbubiyela@gmail.com</p></div></article>
+            <article class="contact-item"><i class="fa-solid fa-phone"></i><div><h3>Téléphone</h3><p>+243 822 090 365</p></div></article>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <label>Votre nom *<input type="text" name="name"></label>
+              <label>Votre email *<input type="email" name="email"></label>
+            </div>
+
+            <label>Sujet *<input type="text" name="subject"></label>
+            <label>Message *<textarea name="message" rows="6"></textarea></label>
+
+            <div class="form-bottom">
+              <p>* Accepter les termes et conditions.</p>
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+
+            <p id="form-message" class="form-message"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container container">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" class="social-link" target="_blank"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://www.instagram.com" class="social-link" target="_blank"><i class="ri-instagram-line"></i></a>
+      </div>
+
+      <p>© 2025 <span>Hervé Mazumbu</span>. Tous droits réservés</p>
+      <p>Developed by <span>Hervé</span></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
